@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/img/abstract-1866640_1920.jpg');
+    font-family: 'Brygada 1918', serif;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: rgb(235, 235, 235);
+    margin: 5% 0;
+    text-shadow: 2px 2px #000;
+}
+
+header, 
+form{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form input{
+    width:50%;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    
+}
+
+form button{
+    color: #0da7ee;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #0da7ee;
+    color: white;
+}
+
+.displayed-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list{
+    min-width: 30%;
+    list-style: none;
+    padding: 0;
+}
+
+.todo{
+    margin: 1.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.delete-btn,
+.complete-btn{
+    background: #f03d0c;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+
+.complete-btn{
+    background: rgb(32, 189, 32);
+}
+
+.todo-item{
+    padding: 0.5rem;
+}
+
+.fa-check,
+.fa-trash-alt{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
